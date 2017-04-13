@@ -11,5 +11,16 @@
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
           crossorigin="anonymous"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
-
-
+    <title>Jonathan Maddison, Portfolio</title>
+</head>
+<body>
+<% if (back === "active") { %>
+<div class='my-nav'><a href="./">Go Back</a></div>
+<% } else { %>
+<div class="my-nav">
+	<div class="container-fluid">
+         <a href="/" class= <%= portfolio +" portfolio-link" %> > Portfolio</a>
+   		 <a href="/resume" class= <%= resume+" resume-link " %> >Resume</a>
+	</div>
+</div>
+<% } %>

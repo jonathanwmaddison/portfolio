@@ -1,14 +1,5 @@
-<% include header %>
-<title>Jonathan Maddison, Portfolio</title>
-</head>
-<body>
-<div class="my-nav">
-	<div class="container-fluid">
-   		 <a href="/"class="resume-link">Resume</a>
-         <a class="active portfolio-link" href="/portfolio">Portfolio</a>
-	</div>
-</div>
-
+<%- include('header', {portfolio: "active", resume: "", back: ""}) %>
+<% include banner %>
 <% include bio %>
 
 <div class="container-fluid">
@@ -18,12 +9,12 @@
                 <h2>Portfolio</h2>
                 <div class="row">
                    <div class="col-md-4">
-                        <a href="/portfolio/project-game-of-life" type="GET" >
+                        <a href="/project-game-of-life" type="GET" >
                             <img class="gif" src="/static/images/gameoflife4.gif">
                        </a>  
                    </div>
                    <div class="col-md-4">
-                        <a href="/portfolio/project-rep-finder" type="GET" >
+                        <a href="/project-rep-finder" type="GET" >
                             <img class="img-responsive" src="/static/images/rep-finder.png">
                        </a>  
                    </div>

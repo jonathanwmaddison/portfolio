@@ -1,14 +1,5 @@
-    
-<% include header %>    
-<title>Jonathan Maddison, Community and Web Development</title>
-</head>
-<body>
-<div class="my-nav">
-	<div class="container-fluid">
-   		 <a href="/" class="active resume-link">Resume</a>
-         <a class="portfolio-link" href="/portfolio">Portfolio</a>
-	</div>
-</div>
+<%- include('header', {resume: "active", portfolio: "", back: ""}) %> 
+<% include banner %>
 <% include bio %>
 <div class="core-resume">
     <div class="work-experience">         
