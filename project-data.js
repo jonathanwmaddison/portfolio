@@ -1,6 +1,27 @@
-function ProjectFinder (id) {
+// current structure
+/*
+{
+    id: "",
+    title: "",
+    summary: "",
+    userStories: [
+    
+    ],
+    tools: [
+    
+    ],
+    tags: [
+    
+    ],
+    image: "",
+    github: "",
+    webpage: "",
+}
+*/
 
-    const projectData =  [
+var Projects = {
+
+    projectData:  [
         {
             id: 'rep-finder',
             title: 'Know Your Rep',
@@ -22,7 +43,10 @@ function ProjectFinder (id) {
                 "NY times API for gathering news stories",
                 "Wikipedia's API"
             ],
-            image: "/static/images/rep-finder.png"
+            tags: ["APIs", "Bootstrap", "jQuery", "HTML", "CSS", "Javascript"],
+            image: "/static/images/rep-finder.png",
+            webpage: "https://jonathanwmaddison.github.io/rep-finder/",
+            github: "https://github.com/jonathanwmaddison/rep-finder"
         },
         {
             id: 'game-of-life',
@@ -39,11 +63,84 @@ function ProjectFinder (id) {
                 "HTML and CSS",
                 "Webpack",
             ],
-            projectLink: "https://jonathanwmaddison.github.io/gameoflife/build/index.html",
-            image: "/static/images/gameoflife4.gif"
+            tags: ["Javascript", "HTML", "CSS", "React", "Webpack", "npm"],
+            webpage: "https://jonathanwmaddison.github.io/gameoflife/build/index.html",
+            image: "/static/images/gameoflife4.gif",
+            github: "https://github.com/jonathanwmaddison/gameoflife"
+        },
+        {
+            id: "rising-circles",
+            title: "Rising Circles: Drum Machine",
+            summary: "Rising Circles started off as a clone of another web app called patatap and evolved into a drum machine. Two libraries were helpful in building this project, Howler JS and Paper JS.",
+            userStories: ["I can create a simple drum beat by pressing keys on my keyboard", "I can change the tempo of the beat", "I can change the soundbank and try out new sounds", "I can pause and rest the drum machine"],
+            tools: ["Paper JS", "Howler", "Javascript", "CSS", "HTML"],
+            tags: ["Javascript", "HTML", "CSS", "Javascript Libraries"],
+            image: "/static/images/rising-circles.png",
+            github: "https://github.com/jonathanwmaddison/rising-circles",
+            webpage: "https://jonathanwmaddison.github.io/rising-circles",
+        },
+        {
+            id: "dungeon-crawler",
+            title: "Pixel Labryinth",
+            summary: "I built Pixel Labryinth as part of freeCodeCamp's challenge. The goal of Pixel Labryinth is to explore and survive a randomly generated labryinth. The most interesting aspect of this project was writing the map generating algorithm. Generating a random map is easy, but making the map feel maze took some more creativity. React was a useful tool here because it allowed to manage state in one class, and then pass down updates into rendering components",
+            userStories: [
+                "I have health, a level, and a weapon",
+                "I can move through the map discovering items",
+                "All the items, rooms, corridors on the map are arranged randomly",
+                "I can move anywhere within the map's boundaries, but I can't move through an enemy until I've beaten it",
+                "Much of the map is hidden, but when I take a step all spaced with in a certain area are revealed",
+                "When I fight an enemy, we take turns damaging each other until one of us loses. My damage is determined by my level and weapon.",
+                "When I beat an enemy, the enemy goes away and I get experience that can increase my level"
+            ],
+            tools: ["React", "Webpack testing and building the project", "Javascript (ES6)", "npm for package management", "HTML", "CSS"],
+            tags: ["React", "Webpack", "Javascript", "npm"],
+            image:  "/static/images/pixel-labryinth.png",
+            github: "https://github.com/jonathanwmaddison/Dungeon-Crawler",
+            webpage: "https://jonathanwmaddison.github.io/Dungeon-Crawler/build/index.html",
+        },
+        {
+            id: "simon",
+            title: "Simon",
+            summary: "Simon is a early pattern matching/rhythm game from the 80's. This web app was built as part of freeCodeCamp's Front End Certification Program",
+            userStories: [
+            
+            ],
+            tools: [
+                "Javascript",
+                "jQuery",
+                "HTML & CSS",
+                "Bootstrap"
+            ],
+            tags: [
+                "Javascript",
+                "jQuery"
+            ],
+            image: "/static/images/simon.png",
+            github: "https://github.com/jonathanwmaddison/Simon-game",
+            webpage: "https://jonathanwmaddison.github.io/Simon-game/index.html",
+        },
+        {
+            id: "recipe-box",
+            title: "Recipe Box",
+            summary: "A very simple app for keeping track of recipes and ingredients, built with React",
+            userStories: [
+            
+            ],
+            tools: [
+            
+            ],
+            tags: [
+                "React",
+                "Javascript",
+            ],
+            image: "",
+            github: "https://github.com/jonathanwmaddison/recipe-box",
+            webpage: "https://jonathanwmaddison.github.io/recipe-box/build/index.html",
         }
-    ]
-    return projectData.filter((project) => project.id === id)[0]
+        ],
+        findProject: function (id) {
+            return this.projectData.filter((project)=> project.id === id)[0]
+        }
 }
 
-module.exports = ProjectFinder
+module.exports = Projects

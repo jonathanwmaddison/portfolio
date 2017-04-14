@@ -5,26 +5,43 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-xl-12 supplements">
-            <div class="portfolio">
-                <h2>Portfolio</h2>
+                <div class="container skills">
+                    <h2> Skills</h2>
+                    <h4> Javascript  | HTML  | CSS  |  React  | C  | Python </h4>
+                </div>
+            <div class="container portfolio">
+                <h2>Project Examples</h2>
+                <h4>Filter Projects By Tools Used: </h4>
+                   <button class="btn btn-sm btn-default" onClick= "handleClick('tags')"> All Projects </button>
+                   <button class="btn btn-sm btn-default" onClick= "handleClick('Javascript')"> Javascript </button>
+                   <button class="btn btn-sm btn-default" onClick= "handleClick('React')"> React </button>
+                   <button class="btn btn-sm btn-default" onClick= "handleClick('jQuery')"> jQuery </button>
+                   <button class="btn btn-sm btn-default" onClick= "handleClick('C')"> C </button>
+                   <button class="btn btn-sm btn-default" onClick= "handleClick('Python')"> Python </button>
                 <div class="row">
-                   <div class="col-md-4">
-                        <a href="/project-game-of-life" type="GET" >
-                            <img class="gif" src="/static/images/gameoflife4.gif">
+                <% projects.forEach(function(project) { %>
+                   <div class="<%- project.tags.join(" ") + " tags col-md-4" %>">
+                        <a href=<%= "/project-"+ project.id%>  type="GET" >
+                            <img class="gif" src=<%= project.image %>>
                        </a>  
                    </div>
-                   <div class="col-md-4">
-                        <a href="/project-rep-finder" type="GET" >
-                            <img class="img-responsive" src="/static/images/rep-finder.png">
-                       </a>  
-                   </div>
-                   <div class="col-md-4">
-                        <a href="https://jonathanwmaddison.github.io/rising-circles/build/index.html" target="_blank">
-                            <img class="img-responsive" src="/static/images/rising-circles.png">
-                       </a>  
-                   </div>
+                <% }) %>
                 </div>
             </div>
         </div>     
     </div>
+    <script>
+        function handleClick(tool) {
+            var elements = document.getElementsByClassName(tool)
+            var allElements = document.getElementsByClassName("tags")
+            for (var i=0; i < allElements.length; i++ ){
+                var item = allElements[i]
+                item.style.display = 'none'
+            }
+            for (var i = 0; i <elements.length; i++ ) { 
+                var item = elements[i]
+                item.style.display = (item.style.display =='none') ? 'block' : '';
+            } 
+        }
+    </script>
 <% include footer %> 

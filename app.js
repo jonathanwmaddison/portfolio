@@ -1,7 +1,7 @@
 var express = require('express')
 var app = express()
 var path = require('path');
-var ProjectFinder = require('./project-data.js')
+var Projects = require('./project-data.js')
 app.set('port', 3000);
 
 app.use('/static', express.static(path.join(__dirname, 'public')))
@@ -9,15 +9,15 @@ app.use('/static', express.static(path.join(__dirname, 'public')))
 app.set('view engine', 'ejs')
 
 app.get('/', function (req, res) {
-    res.render('portfolio')
+    res.render('portfolio', {projects: Projects.projectData})
 })
 
 app.get('/resume', function (req, res) {
-    res.render('resume',)
+    res.render('resume')
 })
 
 app.get('/project-*', function (req, res) {
-    res.render('project', {projectData: ProjectFinder(req.params['0'])})
+    res.render('project', {projectData: Projects.findProject(req.params['0'])})
 })
 
 //Listen for requests

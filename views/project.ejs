@@ -26,9 +26,9 @@
        </ul>
     </div>
 </div>
-<div>
-    <a href="#">You can visit <%=projectData.title %> here! </a>
-    <a href="#">See the code on Github</a>
+<div class="text-center">
+    <a class="btn btn-default  project-link" target="blank" href= <%=  projectData.webpage+"" %>>Visit <%=projectData.title %></a>
+    <a class="btn btn-default  project-link" target="blank" href=<%= projectData.github+"" %>>View code on Github</a>
 </div>
 </div>
 <% include footer %>
