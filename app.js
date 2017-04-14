@@ -2,7 +2,7 @@ var express = require('express')
 var app = express()
 var path = require('path');
 var Projects = require('./project-data.js')
-app.set('port', 3000);
+app.set('port', (process.env.PORT || 3000));
 
 app.use('/static', express.static(path.join(__dirname, 'public')))
 
