@@ -21,9 +21,17 @@
                 <div class="row">
                 <% projects.forEach(function(project) { %>
                    <div class="<%- project.tags.join(" ") + " tags col-md-4" %>">
-                        <a href=<%= "/project-"+ project.id%>  type="GET" >
-                            <img class="gif" src=<%= project.image %>>
-                       </a>  
+                           <img class="gif" src=<%= project.image %>>
+                        
+                        <a  href=<%= "/project-"+ project.id%>  type="GET" >
+                        <div class="hoverbox-top">
+                            <div class="hoverbox-text">
+                                <h2><%=project.title %></h2>
+                                <h4><%=project.shortSummary %></h4>
+                                <h4>This project was built with:<br> <%=project.tags %></h4>
+                            </div>
+                        </div>
+                        </a>  
                    </div>
                 <% }) %>
                 </div>
