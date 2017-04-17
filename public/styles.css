@@ -63,7 +63,7 @@ body,
 }
 .my-nav a {
 	color: white;
-	padding-bottom: 9px;
+	padding-bottom: 3px;
 	margin-left: 2rem;
 
 }
@@ -84,7 +84,7 @@ a:focus {
 a.active {
     color: white;
     background-color: #0187cc;
-    border-bottom: 2px white solid;
+    border-bottom: 1px white solid;
 }
 .profile-img {
     display: block;
