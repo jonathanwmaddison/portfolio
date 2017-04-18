@@ -30,10 +30,10 @@ var ResumeData = {
 }
 ///JOBS
 var freeCodeCamp = ResumeData.addJob(
-    "Self-Directed Learner",
+    "Self-Taught Software Engineer",
     "freeCodeCamp",
     "Sept 2016 - Present",
-    "I am following freeCodeCamp's model to become a full stack software engineer. I am also involved in a cohort of other learners organized by the freeCodeCamp community to facilitate pair-programming, team projects and a community-oriented learning environment.",
+    "After moving to the Bay Area, I decided to pursue my passion in programming. I am following freeCodeCamp's model to become a full stack software engineer. I am also involved in a cohort of other learners organized by the freeCodeCamp community to facilitate pair-programming, team projects and a community-oriented learning environment.",
     [
         "Completing a project based curriculum that requires a mastery of the fundamentals of full stack software engineering.",
         "Maintaining a clear direction, focus, and discipline to achieve personal mastery of a new skillset.",

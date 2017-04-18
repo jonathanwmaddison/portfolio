@@ -2,9 +2,9 @@
 <% include banner %>
 <% include bio %>
 <div class="core-resume">
+    <a class="btn btn-primary btn-lg " href="/static/pdf/jonathanmaddison.pdf">Click to Download My Resume</a>
     <h2> Experience</h2>
     <div class="work-experience"> 
-    <% console.log(jobs, education) %>
         <% jobs.forEach(function(job) { %>
             <h3><%= job.organization %><span class="pull-right"><%= job.date %></span></h3>
             <h4><%= job.title %></h4>
