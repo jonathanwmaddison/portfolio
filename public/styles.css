@@ -26,6 +26,10 @@ body,
 .project-title {
     margin: 0;
 }
+.tags {
+    padding-top:15px;
+    padding-bottom:15px;
+}
 .hoverbox-top {
     opacity: 0;
     position: absolute;
@@ -108,6 +112,7 @@ a.active {
 .contact-me {
     display: block;
     margin: 0 auto;
+    width: 100px;
 }
 .vertical-align {
     display: flex;
