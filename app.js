@@ -2,6 +2,8 @@ var express = require('express')
 var app = express()
 var path = require('path');
 var Projects = require('./project-data.js')
+var ResumeData = require('./resume-data.js')
+
 app.set('port', (process.env.PORT || 3000));
 
 app.use('/static', express.static(path.join(__dirname, 'public')))
@@ -13,7 +15,7 @@ app.get('/', function (req, res) {
 })
 
 app.get('/resume', function (req, res) {
-    res.render('resume')
+    res.render('resume', {jobs: ResumeData.jobs, education: ResumeData.education})
 })
 
 app.get('/project-*', function (req, res) {
