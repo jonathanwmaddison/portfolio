@@ -67,7 +67,7 @@ var Projects = {
             ],
             tags: ["Javascript", "HTML", "CSS", "React", "Webpack", "npm"],
             webpage: "https://jonathanwmaddison.github.io/gameoflife/build/index.html",
-            image: "/static/images/gameoflife4.gif",
+            image: "/static/images/gameoflife.jpg",
             github: "https://github.com/jonathanwmaddison/gameoflife"
         },
         {
