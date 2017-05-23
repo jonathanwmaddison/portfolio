@@ -70,6 +70,30 @@ var Projects = {
             image: "/static/images/gameoflife.jpg",
             github: "https://github.com/jonathanwmaddison/gameoflife"
         },
+		{
+            id: "BartBot",
+            title: "BARTBot",
+            shortSummary: "A facebook messenger bot that can tell you when the next train leaves, where the closest station is and more!",
+			summary: "BartBot uses the Bay Area Rapid Transit API, Facebook Messenger, API.AI, and more to provide a conversational User Interface that helps people navigate the transit system in the Bay Area.",
+            userStories: [
+            
+            ],
+            tools: [
+                "Javascript",
+                "jQuery",
+                "HTML & CSS",
+                "Express",
+				"API.AI"
+            ],
+            tags: [
+                "Javascript",
+                "Express",
+            ],
+            image: "/static/images/bartbot.jpg",
+            github: "https://github.com/jonathanwmaddison/BartBot",
+            webpage: "https://shielded-shore-86912.herokuapp.com/",
+        },
+
         {
             id: "rising-circles",
             title: "Rising Circles: Drum Machine",
@@ -101,6 +125,52 @@ var Projects = {
             image:  "/static/images/pixel-labryinth.png",
             github: "https://github.com/jonathanwmaddison/Dungeon-Crawler",
             webpage: "https://jonathanwmaddison.github.io/Dungeon-Crawler/build/index.html",
+        },
+        {
+            id: "flickr",
+            title: "Flickr Viewer",
+            shortSummary: "Search and enjoy Flickr using this React/Redux webapp",
+            summary: "This project allows users to search Flickr and view images. It was built with React and Redux.",
+            userStories: [
+            
+            ],
+            tools: [
+                "Javascript",
+                "React",
+                "HTML & CSS",
+                "Redux",
+				"Bootstrap"
+            ],
+            tags: [
+                "Javascript",
+                "React",
+				"Redux"
+            ],
+            image: "/static/images/flickr.png",
+            github: "https://github.com/jonathanwmaddison/React-Flickr-Viewer",
+            webpage: "https://jonathanwmaddison.github.io/React-Flickr-View/build",
+        },
+        {
+            id: "motivate",
+            title: "Motivate My Run",
+            shortSummary: "A text messaging service that texts users motivational messages about running",
+            summary: "Motivate My Run scrapes Twitter for messages from users that are running or have just completed a run and stores them in a MongoDB database. The service sends users a randomly selected message from the database to motivate their running habits! ",
+            userStories: [
+            
+            ],
+            tools: [
+                "Javascript",
+                "Express",
+                "MongoDB"
+            ],
+            tags: [
+                "Javascript",
+                "Express",
+				"MongoDB"
+            ],
+            image: "/static/images/motivate.jpg",
+            github: "https://github.com/jonathanwmaddison/Motivate-my-Run",
+            webpage: "",
         },
         {
             id: "simon",
