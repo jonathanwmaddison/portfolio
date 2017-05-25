@@ -147,8 +147,8 @@ var Projects = {
 				"Redux"
             ],
             image: "/static/images/flickr.png",
-            github: "https://github.com/jonathanwmaddison/React-Flickr-Viewer",
-            webpage: "https://jonathanwmaddison.github.io/React-Flickr-View/build",
+            github: "https://github.com/jonathanwmaddison/ReactFlickrViewer",
+            webpage: "https://jonathanwmaddison.github.io/ReactFlickrViewer/build",
         },
         {
             id: "motivate",
@@ -169,8 +169,8 @@ var Projects = {
 				"MongoDB"
             ],
             image: "/static/images/motivate.jpg",
-            github: "https://github.com/jonathanwmaddison/Motivate-my-Run",
-            webpage: "",
+            github: "https://github.com/jonathanwmaddison/MotivatemyRun",
+            webpage: "https://github.com/jonathanwmaddison/MotivatemyRun",
         },
         {
             id: "simon",
