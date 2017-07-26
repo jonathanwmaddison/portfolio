@@ -5,13 +5,13 @@
     title: "",
     summary: "",
     userStories: [
-    
+
     ],
     tools: [
-    
+
     ],
     tags: [
-    
+
     ],
     image: "",
     github: "",
@@ -50,33 +50,38 @@ var Projects = {
             github: "https://github.com/jonathanwmaddison/rep-finder"
         },
         {
-            id: 'game-of-life',
-            title: 'Game Of Life',
-            shortSummary: 'The Game of Life is a simulation of a very simple cellular network where each cell lives or dies based on the status of its neighbors.',
-            summary: 'The Game of Life is a simulation that I developed as part of freeCodeCamp\'s data visualization certificate. It is a model of a simple system where each lives or dies based on the status of their neighbors. I addressed the following user stories:',
+            id: "findMe",
+            title: "FindMe",
+            shortSummary: "iOS app that reduces the risks of wandering for people with dementia",
+            summary: "I co-lead the team and help build out initial architecture, design patterns and jest testing for the React Native App. I am enjoying playing a role in planning (using agile methodology), coding, code reviews, and testing.",
             userStories: [
-                "When I first arrive at the game, it will randomly generate a board and start playing",
-                "I can start and stop the board, and I can set up the board.",
-                "Each time the board changes, I can see how many generations have gone by."
+
             ],
             tools: [
                 "Javascript",
                 "React",
-                "HTML and CSS",
-                "Webpack",
+                "Redux",
+                "React Native",
+                "Jest"
             ],
-            tags: ["Javascript", "HTML", "CSS", "React", "Webpack", "npm"],
-            webpage: "https://jonathanwmaddison.github.io/gameoflife/build/index.html",
-            image: "/static/images/gameoflife.jpg",
-            github: "https://github.com/jonathanwmaddison/gameoflife"
+            tags: [
+                "Javascript",
+                "React",
+				        "React Native",
+                "Redux",
+                "Jest"
+            ],
+            image: "/static/images/findMe.png",
+            github: "https://www.alz.care/",
+            webpage: "https://www.alz.care/",
         },
-		{
+		    {
             id: "BartBot",
             title: "BARTBot",
             shortSummary: "A facebook messenger bot that can tell you when the next train leaves, where the closest station is and more!",
 			summary: "BartBot uses the Bay Area Rapid Transit API, Facebook Messenger, API.AI, and more to provide a conversational User Interface that helps people navigate the transit system in the Bay Area.",
             userStories: [
-            
+
             ],
             tools: [
                 "Javascript",
@@ -107,32 +112,12 @@ var Projects = {
             webpage: "https://jonathanwmaddison.github.io/rising-circles",
         },
         {
-            id: "dungeon-crawler",
-            title: "Pixel Labryinth",
-            shortSummary: 'Pixel Labryinth is a randomly generated dungeon crawler I built for freeCodeCamp',
-            summary: "I built Pixel Labryinth as part of freeCodeCamp's challenge. The goal of Pixel Labryinth is to explore and survive a randomly generated labryinth. The most interesting aspect of this project was writing the map generating algorithm. Generating a random map is easy, but making the map feel maze took some more creativity. React was a useful tool here because it allowed to manage state in one class, and then pass down updates into rendering components",
-            userStories: [
-                "I have health, a level, and a weapon",
-                "I can move through the map discovering items",
-                "All the items, rooms, corridors on the map are arranged randomly",
-                "I can move anywhere within the map's boundaries, but I can't move through an enemy until I've beaten it",
-                "Much of the map is hidden, but when I take a step all spaced with in a certain area are revealed",
-                "When I fight an enemy, we take turns damaging each other until one of us loses. My damage is determined by my level and weapon.",
-                "When I beat an enemy, the enemy goes away and I get experience that can increase my level"
-            ],
-            tools: ["React", "Webpack testing and building the project", "Javascript (ES6)", "npm for package management", "HTML", "CSS"],
-            tags: ["React", "Webpack", "Javascript", "npm"],
-            image:  "/static/images/pixel-labryinth.png",
-            github: "https://github.com/jonathanwmaddison/Dungeon-Crawler",
-            webpage: "https://jonathanwmaddison.github.io/Dungeon-Crawler/build/index.html",
-        },
-        {
             id: "flickr",
             title: "Flickr Viewer",
             shortSummary: "Search and enjoy Flickr using this React/Redux webapp",
             summary: "This project allows users to search Flickr and view images. It was built with React and Redux.",
             userStories: [
-            
+
             ],
             tools: [
                 "Javascript",
@@ -156,7 +141,7 @@ var Projects = {
             shortSummary: "A text messaging service that texts users motivational messages about running",
             summary: "Motivate My Run scrapes Twitter for messages from users that are running or have just completed a run and stores them in a MongoDB database. The service sends users a randomly selected message from the database to motivate their running habits! ",
             userStories: [
-            
+
             ],
             tools: [
                 "Javascript",
@@ -173,12 +158,53 @@ var Projects = {
             webpage: "https://github.com/jonathanwmaddison/MotivatemyRun",
         },
         {
+            id: 'game-of-life',
+            title: 'Game Of Life',
+            shortSummary: 'The Game of Life is a simulation of a very simple cellular network where each cell lives or dies based on the status of its neighbors.',
+            summary: 'The Game of Life is a simulation that I developed as part of freeCodeCamp\'s data visualization certificate. It is a model of a simple system where each lives or dies based on the status of their neighbors. I addressed the following user stories:',
+            userStories: [
+                "When I first arrive at the game, it will randomly generate a board and start playing",
+                "I can start and stop the board, and I can set up the board.",
+                "Each time the board changes, I can see how many generations have gone by."
+            ],
+            tools: [
+                "Javascript",
+                "React",
+                "HTML and CSS",
+                "Webpack",
+            ],
+            tags: ["Javascript", "HTML", "CSS", "React", "Webpack", "npm"],
+            webpage: "https://jonathanwmaddison.github.io/gameoflife/build/index.html",
+            image: "/static/images/gameoflife.jpg",
+            github: "https://github.com/jonathanwmaddison/gameoflife"
+        },
+        {
+            id: "dungeon-crawler",
+            title: "Pixel Labryinth",
+            shortSummary: 'Pixel Labryinth is a randomly generated dungeon crawler I built for freeCodeCamp',
+            summary: "I built Pixel Labryinth as part of freeCodeCamp's challenge. The goal of Pixel Labryinth is to explore and survive a randomly generated labryinth. The most interesting aspect of this project was writing the map generating algorithm. Generating a random map is easy, but making the map feel maze took some more creativity. React was a useful tool here because it allowed to manage state in one class, and then pass down updates into rendering components",
+            userStories: [
+                "I have health, a level, and a weapon",
+                "I can move through the map discovering items",
+                "All the items, rooms, corridors on the map are arranged randomly",
+                "I can move anywhere within the map's boundaries, but I can't move through an enemy until I've beaten it",
+                "Much of the map is hidden, but when I take a step all spaced with in a certain area are revealed",
+                "When I fight an enemy, we take turns damaging each other until one of us loses. My damage is determined by my level and weapon.",
+                "When I beat an enemy, the enemy goes away and I get experience that can increase my level"
+            ],
+            tools: ["React", "Webpack testing and building the project", "Javascript (ES6)", "npm for package management", "HTML", "CSS"],
+            tags: ["React", "Webpack", "Javascript", "npm"],
+            image:  "/static/images/pixel-labryinth.png",
+            github: "https://github.com/jonathanwmaddison/Dungeon-Crawler",
+            webpage: "https://jonathanwmaddison.github.io/Dungeon-Crawler/build/index.html",
+        },
+        {
             id: "simon",
             title: "Simon",
             shortSummary: "Simon is a early pattern matching/rhythm game from the 80's. This web app was built as part of freeCodeCamp's Front End Certification Program",
             summary: "Simon is a early pattern matching/rhythm game from the 80's. This web app was built as part of freeCodeCamp's Front End Certification Program",
             userStories: [
-            
+
             ],
             tools: [
                 "Javascript",
@@ -194,7 +220,7 @@ var Projects = {
             github: "https://github.com/jonathanwmaddison/Simon-game",
             webpage: "https://jonathanwmaddison.github.io/Simon-game/index.html",
         },
-        
+
         ],
         findProject: function (id) {
             return this.projectData.filter((project)=> project.id === id)[0]
@@ -207,10 +233,10 @@ Projects I'm not including
             title: "Recipe Box",
             summary: "A very simple app for keeping track of recipes and ingredients, built with React",
             userStories: [
-            
+
             ],
             tools: [
-            
+
             ],
             tags: [
                 "React",

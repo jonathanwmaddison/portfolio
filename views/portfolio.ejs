@@ -7,7 +7,8 @@
         <div class="col-xl-12 supplements">
                 <div class="container skills">
                     <h2> Skills</h2>
-                    <h4> Javascript  | HTML  | CSS  |  React  | Express | C | Python </h4>
+                    <h4> Javascript | React | Redux | React Native | Node | Express | HTML | CSS | C | Python </h4>
+                    <h4> Test Driven Development | Agile Development | Code Review | Git  </h4>
                 </div>
             <div class="container portfolio">
                 <h2>Project Examples</h2>
@@ -21,21 +22,21 @@
                 <% projects.forEach(function(project) { %>
                    <div class="<%- project.tags.join(" ") + " tags col-md-4" %>">
                            <img class="gif" src=<%= project.image %>>
-                        
+
                         <a  href=<%= "/project-"+ project.id%>  type="GET" >
                         <div class="hoverbox-top">
                             <div class="hoverbox-text">
                                 <h2><%=project.title %></h2>
                                 <h4><%=project.shortSummary %></h4>
-                                <h4>This project was built with:<br> <%=project.tags %></h4>
+                                <h4>This project was built with:<br> <%=project.tags.join(", ") %></h4>
                             </div>
                         </div>
-                        </a>  
+                        </a>
                    </div>
                 <% }) %>
                 </div>
             </div>
-        </div>     
+        </div>
     </div>
     <script>
         function handleClick(tool) {
@@ -45,10 +46,10 @@
                 var item = allElements[i]
                 item.style.display = 'none'
             }
-            for (var i = 0; i <elements.length; i++ ) { 
+            for (var i = 0; i <elements.length; i++ ) {
                 var item = elements[i]
                 item.style.display = (item.style.display =='none') ? 'block' : '';
-            } 
+            }
         }
     </script>
-<% include footer %> 
+<% include footer %>
