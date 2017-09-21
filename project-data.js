@@ -22,6 +22,29 @@
 var Projects = {
 
     projectData:  [
+      {
+          id: 'react-resume',
+          title: 'React Resume Creator',
+          shortSummary: 'React Resume Creator is a tool anyone can use to create, and save their resume data',
+          summary: 'As I was beginning a job search, I realized that I wanted a better way to create my resume, control what information to include in my resume, and format my resume easily and professionaly. I found a variety of existing libraries like resume.json and hackMyResume but none of these would be easy for a non-programmer to benefit from. React Resume Creator is the initial attempt at making these tools accesible and creating an intuitive UI',
+          userStories: [
+            "I can create an account and login using my gmail account where all of my resumes are saved",
+            "I can edit my Resume inLine or in a form",
+            "I can download my resume data in HTML, JSON and Microsoft word formats",
+            "I can choose from a variety of resume templates when downloading the Word version of my Doc"
+          ],
+          tools: [
+              "React",
+              "Redux",
+              "React Router",
+              "Firebase",
+              "Docxtemplater",
+          ],
+          tags: ["Firebase", "React", "HTML", "CSS", "Javascript"],
+          image: "/static/images/resume-creator.png",
+          webpage: "http://react-resume-creator.surge.sh/",
+          github: null
+      },
         {
             id: 'rep-finder',
             title: 'Know Your Official',
@@ -198,28 +221,7 @@ var Projects = {
             github: "https://github.com/jonathanwmaddison/Dungeon-Crawler",
             webpage: "https://jonathanwmaddison.github.io/Dungeon-Crawler/build/index.html",
         },
-        {
-            id: "simon",
-            title: "Simon",
-            shortSummary: "Simon is a early pattern matching/rhythm game from the 80's. This web app was built as part of freeCodeCamp's Front End Certification Program",
-            summary: "Simon is a early pattern matching/rhythm game from the 80's. This web app was built as part of freeCodeCamp's Front End Certification Program",
-            userStories: [
 
-            ],
-            tools: [
-                "Javascript",
-                "jQuery",
-                "HTML & CSS",
-                "Bootstrap"
-            ],
-            tags: [
-                "Javascript",
-                "jQuery"
-            ],
-            image: "/static/images/simon.png",
-            github: "https://github.com/jonathanwmaddison/Simon-game",
-            webpage: "https://jonathanwmaddison.github.io/Simon-game/index.html",
-        },
 
         ],
         findProject: function (id) {
@@ -246,5 +248,28 @@ Projects I'm not including
             github: "https://github.com/jonathanwmaddison/recipe-box",
             webpage: "https://jonathanwmaddison.github.io/recipe-box/build/index.html",
         }
+
+        {
+            id: "simon",
+            title: "Simon",
+            shortSummary: "Simon is a early pattern matching/rhythm game from the 80's. This web app was built as part of freeCodeCamp's Front End Certification Program",
+            summary: "Simon is a early pattern matching/rhythm game from the 80's. This web app was built as part of freeCodeCamp's Front End Certification Program",
+            userStories: [
+
+            ],
+            tools: [
+                "Javascript",
+                "jQuery",
+                "HTML & CSS",
+                "Bootstrap"
+            ],
+            tags: [
+                "Javascript",
+                "jQuery"
+            ],
+            image: "/static/images/simon.png",
+            github: "https://github.com/jonathanwmaddison/Simon-game",
+            webpage: "https://jonathanwmaddison.github.io/Simon-game/index.html",
+        },
 */
 module.exports = Projects
