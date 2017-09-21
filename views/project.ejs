@@ -10,8 +10,10 @@
     <div class="col-md-6">
        <img class="img-responsive" src=<%= projectData.image %>>
        <div class="text-center">
-           <a class="btn btn-default  project-link" target="blank" href= <%=  projectData.webpage+"" %>>Visit <%=projectData.title %></a>
-           <a class="btn btn-default  project-link" target="blank" href=<%= projectData.github+"" %>>View Code</a>
+           <a class="btn btn-primary  project-link" target="blank" href= <%=  projectData.webpage+"" %>>Visit <%=projectData.title %></a>
+           <%if (projectData.github) { %>
+             <a class="btn btn-primary  project-link" target="blank" href=<%= projectData.github+"" %>>View Code</a>
+            <% } %>
        </div>
     </div>
     <div class="col-md-6">
