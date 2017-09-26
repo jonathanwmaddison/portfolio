@@ -15,7 +15,7 @@ app.get('/', function (req, res) {
 })
 
 app.get('/resume', function (req, res) {
-    res.render('resume2', {jobs: ResumeData.jobs, education: ResumeData.education})
+    res.render('resume3', {jobs: ResumeData.jobs, education: ResumeData.education})
 })
 
 app.get('/project-*', function (req, res) {
