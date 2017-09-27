@@ -98,6 +98,7 @@ a.active {
     width: 108px;
     height: 108px;
     padding: 5px;
+    margin-bottom: 15px;
 }
 .title-panel {
     background-color: #0aa1da;
@@ -122,6 +123,12 @@ a.active {
     background-color: #576268;
     padding:2rem 5rem 2rem 5rem;
     color: #e9e9e9;
+}
+@media screen and (min-width: 800px) {
+  .about-text {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
 }
 .about {
     text-align: center;
